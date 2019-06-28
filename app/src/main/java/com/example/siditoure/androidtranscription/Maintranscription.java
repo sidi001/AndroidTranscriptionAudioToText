@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Environment;
-import android.provider.MediaStore;
 import android.speech.RecognizerIntent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -21,7 +23,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Locale;
 
 
 public class Maintranscription extends AppCompatActivity {
@@ -131,4 +132,32 @@ public class Maintranscription extends AppCompatActivity {
                 }
         }
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){ // TODO Auto-generated method stub
+         MenuInflater inflater = getMenuInflater();
+         inflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu); }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) { switch(item.getItemId()) {
+// On peut créer le menu via le code
+        case R.id.item1: Toast.makeText(this, "à propos", Toast.LENGTH_LONG).show();
+            Intent intent0 = new Intent(this, Apropos.class);
+            startActivity(intent0);
+            break;
+        case R.id.item2: Toast.makeText(this, "transcrire audio", Toast.LENGTH_LONG).show();
+            Intent intent1 = new Intent(this, Maintranscription.class);
+            startActivity(intent1);
+            break;
+        case R.id.item3: Toast.makeText(this, "voir fichier.txt", Toast.LENGTH_LONG).show();
+            Intent intent2 = new Intent(this, ExplorateurActivity.class);
+            startActivity(intent2);
+            break;
+        case R.id.item4: Toast.makeText(this, "vous avez quitter l'application", Toast.LENGTH_LONG).show();
+            finish();
+            moveTaskToBack(true);
+            break;
+    }
+        return super.onOptionsItemSelected(item); }
 }

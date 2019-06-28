@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Android transcription</string>
     <string name="title_activity_login">Sign in</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -13,4 +12,11 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="menu_options">Options</string>
+    <string name="see_item">Voir</string>
+    <string name="delete_item">Supprimer</string>
+    <string name="couleurs_pref">Préférences visuelles</string>
+    <string name="title_activity_explorateur">ExplorateurActivity</string>
+    <string name="title_activity_exploreur_preference">ExploreurPreference</string>
+    <string name="apropos">Consciente des opportunités qu’offre la technologie mobile aux problèmes d’accessibilité, on sait en plus que de nos jours les smartphones sont de plus en plus utilisables. Le domaine du développement des applications mobiles n\'a cessé de s\'élargir qu\'il a même touché une partie négligée dans notre société \"Les personnes avec handicap\". Ainsi l\’ENSIAS en collaboration avec l\'association e-MOBADARA,va lancer des projets de développement d’application mobile. Mon projet consiste alors au développement d\’une application qui servira prendre une information sous forme d’audio pour en faire une transcription en text, on enregistre ensuite ce text dans un fichier pour permettre d’éventuelle traitement comme l\’affichage en sous-titre d’une vidéo pour aider les personnes sourds​. Au cours des séances de tps nous avons pu nous familiariser avec l\'environnement de travail ​Android Studio​, ce qui va me permettre d\’aller au bout du travail.</string>
 </resources>

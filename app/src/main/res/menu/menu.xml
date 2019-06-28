@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item1" android:title="à propos"/>
+    <item android:id="@+id/item2" android:title="transcrire audio"/>
+    <item android:id="@+id/item3" android:title="voir fichier.txt"/>
+    <item android:id="@+id/item4" android:title="Quitter"/>
+</menu>
